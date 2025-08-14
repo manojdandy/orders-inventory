@@ -1,0 +1,33 @@
+{
+  "sample_inventory": [
+    {
+      "id": "item001",
+      "name": "Widget A",
+      "quantity": 100,
+      "price": 15.99
+    },
+    {
+      "id": "item002", 
+      "name": "Widget B",
+      "quantity": 50,
+      "price": 25.50
+    },
+    {
+      "id": "item003",
+      "name": "Gadget X",
+      "quantity": 25,
+      "price": 99.99
+    }
+  ],
+  "sample_orders": [
+    {
+      "order_id": "ord001",
+      "customer_id": "cust001",
+      "items": [
+        {"item_id": "item001", "quantity": 5},
+        {"item_id": "item002", "quantity": 2}
+      ],
+      "status": "pending"
+    }
+  ]
+}
