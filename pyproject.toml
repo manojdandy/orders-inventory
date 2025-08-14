@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "orders_inventory", from = "src"}]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.12"
 sqlmodel = "^0.0.14"
 sqlalchemy = "^2.0.0"
 pydantic = "^2.0.0"
