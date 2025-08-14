@@ -20,7 +20,7 @@ pydantic==2.5.2
     #   -r requirements.in
     #   fastapi
     #   sqlmodel
-pydantic-core==2.14.5
+pydantic-core==2.14.5 --only-binary=all
     # via pydantic
 python-dotenv==1.1.1
     # via uvicorn

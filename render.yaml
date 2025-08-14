@@ -2,7 +2,7 @@ services:
   - type: web
     name: orders-inventory-api
     runtime: python3
-    buildCommand: pip install poetry && poetry config virtualenvs.create false && poetry install --only=main
+    buildCommand: pip install --upgrade pip setuptools wheel && pip install -r requirements-simple.txt
     startCommand: uvicorn src.orders_inventory.api.main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: PYTHON_VERSION
