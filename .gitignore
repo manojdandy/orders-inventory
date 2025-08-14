@@ -148,3 +148,4 @@ cython_debug/
 Thumbs.db
 ehthumbs.db
 Desktop.iniorders_inventory.db
+orders_inventory.db
