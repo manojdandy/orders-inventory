@@ -1,0 +1,7 @@
+# Base requirements for production
+fastapi
+uvicorn[standard]
+sqlmodel
+sqlalchemy
+pydantic
+python-multipart
