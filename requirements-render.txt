@@ -1,5 +1,4 @@
 # Ultra minimal requirements for Render - avoiding Rust compilation
 fastapi==0.95.2
 uvicorn==0.20.0
-sqlalchemy==1.4.48
-# No pydantic 2.x to avoid pydantic-core Rust compilation
+# SQLAlchemy not needed for simple in-memory app
