@@ -31,7 +31,13 @@ app.add_middleware(
 
 @app.get("/")
 def root():
-    return {"message": "Orders & Inventory Management API", "version": "1.0.0"}
+    port = os.getenv("PORT", "not set")
+    return {
+        "message": "Orders & Inventory Management API", 
+        "version": "1.0.0",
+        "port": port,
+        "host": "0.0.0.0"
+    }
 
 @app.get("/health")
 def health():
