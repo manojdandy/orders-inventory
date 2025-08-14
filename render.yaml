@@ -2,7 +2,7 @@ services:
   - type: web
     name: orders-inventory-api
     runtime: python3
-    buildCommand: pip install --upgrade pip setuptools wheel && pip install -r requirements-simple.txt
+    buildCommand: pip install --upgrade pip==25.2 && pip install fastapi==0.104.1 uvicorn==0.24.0 sqlmodel==0.0.14 sqlalchemy==2.0.23 pydantic==2.5.2
     startCommand: uvicorn src.orders_inventory.api.main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: PYTHON_VERSION
